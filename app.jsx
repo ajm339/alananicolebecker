@@ -547,7 +547,7 @@ PhotoGrid = React.createClass({
 				<ReactCSSTransitionGroup transitionName="transition" transitionAppear={true} transitionAppearTimeout={1500} >
 					<div className="col-xs-12 col-sm-8 col-sm-offset-2">
 						<div className="transparent-background">
-							<h3 className="text-center">And here are some of those great moments that we have shared together. Happy Anniversary, for being in my life a whole year, Alana.  I look forward to many more in our future.</h3>
+							<h3 className="text-center">And here are some more great moments that we have shared together. Happy Anniversary, for being in my life a whole year, Alana.  I look forward to many more in our future.</h3>
 							<h3 className="text-center">I love you.</h3>
 
 							<div className="spacing">
