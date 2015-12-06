@@ -1,3 +1,28 @@
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {  
+	h1{
+		font-size: 2.5em !important;
+	}
+	h2{
+		font-size: 1.5em !important;
+	}
+	h3{
+		font-size: 1em !important;
+	}
+	h4{
+	font-size: 1em;
+	}
+	p{
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 768px) { 
+	.transparent-background{
+		margin-top: 1em !important;
+	}
+}
+
+
 /* CSS declarations go here */
 html{
 	background: url(/images/alana-jordan-lake.jpg) no-repeat; 
@@ -58,7 +83,7 @@ h3{
 
 .transparent-background{
 	background: rgba(250, 250, 250, 0.5);
-	margin-top:4em;
+	margin-top:2em;
 	padding: 0.5em 1em 0.5em 1em;
 }
 
@@ -106,24 +131,6 @@ input{
 
 :-ms-input-placeholder {  
    text-align: center; 
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {  
-	h1{
-		font-size: 3.5em !important;
-	}
-	h2{
-		font-size: 1.5em !important;
-	}
-	h3{
-		font-size: 1em !important;
-	}
-	h4{
-	font-size: 1em;
-	}
-	p{
-		font-size: 0.8em;
-	}
 }
 
 /* Medium devices (desktops, 992px and up) */

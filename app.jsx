@@ -547,7 +547,7 @@ PhotoGrid = React.createClass({
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
 		ReactDOM.render(<StoryPart3 />, document.getElementById("content") );
 	},
-	__handleRestart () {
+	_handleRestart () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
 		ReactDOM.render(<Login />, document.getElementById("content") );
 	},
