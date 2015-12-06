@@ -35,6 +35,14 @@ h3{
 	margin: auto !important;
 }
 
+.float-right{
+	float: right;
+}
+
+.float-left{
+	float: left;
+}
+
 .max-width-80{
 	max-width: 80%;
 }
@@ -46,13 +54,31 @@ h3{
 .transparent-background{
 	background: rgba(250, 250, 250, 0.5);
 	margin-top:4em;
-	padding-top:1em;
-	padding-bottom:2em;
+	padding: 1em 1em 1em 1em;
 }
 
 .spacing{
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+#alanaDogMaineThumbnail{
+	max-height: 350px;
+}
+
+/* center container with CSS */
+.grid {
+  margin: 0 auto;
+  overflow: scroll;
+  max-height: 470px;
+}
+
+.grid-item{
+	width:200px;
+}
+
+.grid-item-pic{
+	width:100%;
 }
 
 input{
@@ -103,11 +129,11 @@ input{
 
 
 /*React Transitions*/
-.transition-enter {
+.transition-appear {
   opacity: 0.01;
 }
 
-.transition-enter.transition-enter-active {
+.transition-appear.transition-appear-active {
   opacity: 1;
   transition: opacity 500ms ease-in;
 }
