@@ -283,7 +283,7 @@ StoryPart6 = React.createClass({
 	},
 	_handleNext () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
-		ReactDOM.render(<StoryPart7 />, document.getElementById("content") );
+		ReactDOM.render(<StoryPart6_5 />, document.getElementById("content") );
 	},
 	render(){
 		return (
@@ -295,6 +295,43 @@ StoryPart6 = React.createClass({
 
 							<div className="spacing">
 								<img src="/images/alana-alex-philadelphia.jpg" alt="Alana Alex Philly" className="block-center max-width-80" id="alanaDogMaineThumbnail" />
+							</div>
+
+							<div className="row">
+								<div className="col-xs-6">
+									<button className="btn purple float-right" onClick={this._handleBack}>Back</button>
+								</div>
+								<div className="col-xs-6">
+									<button className="btn purple float-left" onClick={this._handleNext}>Next</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ReactCSSTransitionGroup>
+			</div>
+		);
+	}
+});
+
+StoryPart6_5 = React.createClass({
+	_handleBack () {
+		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
+		ReactDOM.render(<StoryPart6 />, document.getElementById("content") );
+	},
+	_handleNext () {
+		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
+		ReactDOM.render(<StoryPart7 />, document.getElementById("content") );
+	},
+	render(){
+		return (
+			<div className="row">
+				<ReactCSSTransitionGroup transitionName="transition" transitionAppear={true} transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionAppearTimeout={1500} >
+					<div className="col-xs-12 col-sm-6 col-sm-offset-3">
+						<div className="transparent-background">
+							<h3 className="text-center"><i>With a stop in Cape Cod</i></h3>
+
+							<div className="spacing">
+								<img src="/images/alex-alana-capecod.jpg" alt="Alana Alex CapeCod" className="block-center max-width-80" id="alanaDogMaineThumbnail" />
 							</div>
 
 							<div className="row">
@@ -481,7 +518,6 @@ PhotoGrid = React.createClass({
 			"/images/grid/date-night2.jpg",
 			"/images/grid/IMG_0278.jpg",
 			"/images/grid/IMG_0643.jpg",
-			"/images/grid/IMG_0289.jpg",
 			"/images/grid/wine-tour1.jpg",
 			"/images/grid/IMG_0545.jpg",
 			"/images/grid/IMG_0546.jpg",
