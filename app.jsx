@@ -353,7 +353,7 @@ StoryPart6_5 = React.createClass({
 StoryPart7 = React.createClass({
 	_handleBack () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
-		ReactDOM.render(<StoryPart6 />, document.getElementById("content") );
+		ReactDOM.render(<StoryPart6_5 />, document.getElementById("content") );
 	},
 	_handleNext () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
@@ -581,7 +581,7 @@ PhotoGrid = React.createClass({
 	},
 	_handleBack () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
-		ReactDOM.render(<StoryPart3 />, document.getElementById("content") );
+		ReactDOM.render(<StoryPart10 />, document.getElementById("content") );
 	},
 	_handleRestart () {
 		ReactDOM.unmountComponentAtNode( document.getElementById("content") );
